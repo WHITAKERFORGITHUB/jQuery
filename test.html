@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+  <ul id="list">
+  </ul>
+
+  <ul>
+    <li id="0">USD</li>
+    <li id="1">JPY</li>
+    <li id="2">EUR</li>
+    <li id="3">GBP</li>
+  </ul>
+
+  <script>
+    var arr = [
+      {
+        CRCY_CD: 'USD',
+        TARGET_PRCIE: '1250.00',
+        AUTO_CHARGE: '100',
+        USE_YN: 'Y'  
+      },
+      {
+        CRCY_CD: 'JPY',
+        TARGET_PRCIE: '1250.00',
+        AUTO_CHARGE: '1000',
+        USE_YN: 'N'  
+      },
+      {
+        CRCY_CD: 'GBP',
+        TARGET_PRCIE: '1350.00',
+        AUTO_CHARGE: '300',
+        USE_YN: 'Y'
+      }
+    ]
+    var ul = $('#list')
+    for(i=0; i<arr.length; i++) {   
+      console.log(`$('#${i}').text()`)
+      console.log($('#0').text())
+    }
+  </script>
+</body>
+</html>
